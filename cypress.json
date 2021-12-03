@@ -1,3 +1,4 @@
 {
-    "baseUrl": "https://www.ottonova.de/online-beitragsrechner/"
+    "baseUrl": "https://www.ottonova.de/online-beitragsrechner/",
+    "defaultCommandTimeout": 10000
 }

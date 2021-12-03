@@ -41,6 +41,7 @@ Cypress.Commands.add("enter_Birthday",(day,month,year)=>{
     cy.get('.birthday > .ng-tns-c59-9').shadow().find('.year').type(year);
 })
 
+//Clear Birthday textbox
 Cypress.Commands.add("clear_Birthday",()=>{
     cy.get('.birthday > .ng-tns-c59-9').shadow().find('.birthday').clear();
 })
