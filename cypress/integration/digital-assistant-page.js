@@ -1,6 +1,6 @@
 ///<reference types = "Cypress" />
 
-describe("Validate digital assistant page of Ottonova",()=>{
+describe("Validate error error messages that related birthday textbox and API request body",()=>{
     beforeEach(function(){
         cy.navigate_To_Homepage();
 
@@ -9,7 +9,7 @@ describe("Validate digital assistant page of Ottonova",()=>{
         })
     })
 
-    it.only("Validate error message when user age below 16",()=>{   
+    it("Validate error message when user age below 16",()=>{   
 
         //possible solution for validation of the API request body 
         //cy.intercept({method:'POST',url:"**/sst.ottonova.de/*"}).as("newDate");
