@@ -35,8 +35,10 @@ Cypress.Commands.add("navigate_To_Homepage", () => {
 })
 
 //Enter the birthdate in the text box, format should be like 'dd-mm-yyy'(01-01-2022)
-Cypress.Commands.add("enter_Birthday",(birthday)=>{
-    cy.get('.birthday > .ng-tns-c59-9').shadow().find('.birthday').type(birthday);
+Cypress.Commands.add("enter_Birthday",(day,month,year)=>{
+    cy.get('.birthday > .ng-tns-c59-9').shadow().find('.day').type(day);
+    cy.get('.birthday > .ng-tns-c59-9').shadow().find('.month').type(month);
+    cy.get('.birthday > .ng-tns-c59-9').shadow().find('.year').type(year);
 })
 
 Cypress.Commands.add("clear_Birthday",()=>{
